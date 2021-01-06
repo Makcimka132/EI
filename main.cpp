@@ -48,9 +48,7 @@ int main(int argc, char** argv)
     while(getline(file, line)){ // пока не достигнут конец файла класть очередную строку в переменную
         string func = get_word(line, " ", 0);
         func = str_tolower(func);
-        switch(func)
-        {
-            case "print":
+        if(func == "print"){
                 line = StringReplacer(line, get_word(line, " ", 0), "");
                 line = trim(line);
                 cout << line << endl;
