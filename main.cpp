@@ -52,7 +52,6 @@ int main(int argc, char** argv)
                 line = StringReplacer(line, get_word(line, " ", 0), "");
                 line = trim(line);
                 cout << line << endl;
-                break;
         }
     }
 
